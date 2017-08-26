@@ -3,7 +3,15 @@
 # comes with Ruby!
 
 def reverse_a_string(string)
+  chars_array = string.split("")
+  reversed_str = []
+  
+  (string.length).times do
+    reversed_str << chars_array.pop
+  end
 
+  reversed_str.join
+  
 end
 
 # Driver code - don't touch anything below this line.

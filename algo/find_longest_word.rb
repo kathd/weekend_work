@@ -2,18 +2,14 @@
 
 def find_longest_word(sentence)
   words_arr = sentence.split(" ")
-  idx = 1
-  longest_word = words_arr[0]
+  longest_word = ""
 
-  while idx < words_arr.length
-    if words_arr[idx].length > longest_word.length
-      longest_word = words_arr[idx]
+  words_arr.each do |word|
+    if word.length > longest_word.length
+      longest_word = word
     end
-    idx += 1
   end
-
   longest_word
-
 end
 
 # Driver code - don't touch anything below this line.
